@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* navbar */
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 10%;
+    background-color: grey;
+    z-index: 1;
+}
+.logo{
+    font-size: 2.5rem;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Oswald", system-ui;
+} 
+
+.navbar a{
+    font-size: 1.15rem;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 2.5rem;
+    font-family: "Oswald", system-ui;
+}
+.heading{
+    padding-top: 100px;
+}
+#check{
+    display: none;
+}
+.icon{
+    font-size: 2.4rem;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    position: absolute;
+    right: 5%;
+    display: none;
+    cursor: pointer;
+}
+.navbar a:hover{
+    color: #ff0000;
+}
+
+
+
+
+/* homepage */
+.heading{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Teko", system-ui;
+    text-decoration: underline;
+}
+.newcard{
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: center;  */
+    padding: 20px;
+    
+}
+/* Individual card styling */
+.card1{
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    width: 50%; 
+    text-align: center;
+    margin: 10px ;
+}
+.card1 img{
+    width: 100%;               
+    height: 400px;             
+    object-fit: cover;          
+    object-position: center;   
+}
+.cardcontent1{
+    padding: 15px;
+}
+.cardcontent1 h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Bebas Neue", system-ui;
+}
+.cardcontent1 p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: white;
+    font-family: "Lora", system-ui;
+}
+/* Button styling */
+.cardcontent1 button{
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Oswald", system-ui;
+}
+.cardcontent1 button:hover{
+    background-color: green; 
+}
+
+
+
+/* top rated */
+.topcard{
+    display: flex; 
+    flex-wrap: nowrap;
+    /* grid-template-columns: repeat(4, 1fr);  */
+    gap: 20px;
+    padding: 20px;
+}
+.card2 {
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    text-align: center;
+}
+.card2 img {
+    width: 100%;               
+    height: 400px;             
+    object-fit: cover;         
+    object-position: center;    
+}
+.cardcontent2 {
+    padding: 15px;
+    color: white;
+}
+.cardcontent2 h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Bebas Neue", system-ui;
+}
+.cardcontent2 p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-family: "Lora", system-ui;
+}
+.cardcontent2 button {
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Oswald", system-ui;
+}
+.cardcontent2 button:hover {
+    background-color: green; 
+}
+
+
+/* free games */
+.freecard{
+    display: flex; 
+    flex-wrap: nowrap;
+    /* grid-template-columns: repeat(5, 1fr); */
+    gap: 20px; 
+    padding: 20px;
+}
+.card3{
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    text-align: center;
+}
+.card3 img{
+    width: 100%;               
+    height: 400px;             
+    object-fit: cover;          
+    object-position: center;    
+}
+.cardcontent3{
+    padding: 15px;
+    color: white;
+}
+
+.cardcontent3 h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Bebas Neue", system-ui;
+}
+.cardcontent3 p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-family: "Lora", system-ui;
+}
+.cardcontent3 button{
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Oswald", system-ui;
+}
+.cardcontent3 button:hover{
+    background-color:green; 
+}
+
+
+
+/* upcoming games */
+.upcomingcard{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px; 
+    padding: 20px;
+}
+.card4{
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    text-align: center;
+}
+.card4 img{
+    width: 100%;               
+    height: 400px;             
+    object-fit: cover;         
+    object-position: center;   
+}    
+.cardcontent4{
+    padding: 15px;
+    color: white;
+}
+.cardcontent4 h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Bebas Neue", system-ui;
+}
+.cardcontent4 p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-family: "Lora", system-ui;
+}
+.cardcontent4 button{
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Oswald", system-ui;
+}
+.cardcontent4 button:hover{
+    background-color:green; 
+}
+
+
+/* footer */
+footer{
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+} 
+.footerbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+}
+.footerlinks ul{
+    list-style: none;
+    padding: 0;
+}
+.footerlinks ul li{
+    display: inline;
+    margin: 0 15px;
+    
+}
+.footerlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Teko", system-ui;
+}
+.footerlinks ul li a:hover{
+    text-decoration: underline;
+} 
+
+
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+
+
+
+/* media query */
+@media(max-width:992px) and (min-width:760px){
+    .navbar{
+        padding: 1.3rem 5%;
+    } 
+    .newcard{
+        flex-wrap: wrap;
+    }
+    .topcard{
+        flex-wrap: wrap;
+    }
+    .freecard{
+        flex-wrap: wrap;
+    }
+    .upcomingcard{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:760px){
+    .icon{
+        display: flex;
+        background-color: grey;
+    }
+    .icon{
+        display: flex;
+    }
+    #closeicon{
+        display: none;
+    }
+    #check:checked~.icon #menuicon{
+        display: none;        
+    }
+    #check:checked~.icon #closeicon{
+        display: block;        
+    }
+    #check:checked~.navbar{
+        display: block;        
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: grey;
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 1.5rem 0px;
+    }
+
+    .newcard{
+        flex-wrap: wrap;
+    }
+    .topcard{
+        flex-wrap: wrap;
+    }
+    .freecard{
+        flex-wrap: wrap;
+    }
+    .upcomingcard{
+        flex-wrap: wrap;
+    }
+}
